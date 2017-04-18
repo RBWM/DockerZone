@@ -1,9 +1,4 @@
 FROM ubuntu:trusty
-
-MAINTAINER Venky_Docker
-
+MAINTAINER VENKY_DOCKER
 RUN apt-get update && apt-get -y install apache2 && service apache2 start
-
-EXPOSE 80
-
-CMD ["ping","google.com"]
+CMD ["SERVICE","START"]
