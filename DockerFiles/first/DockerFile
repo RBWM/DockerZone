@@ -1,4 +1,7 @@
 FROM ubuntu:trusty
+
 MAINTAINER VENKY_DOCKER
-RUN apt-get update && apt-get -y install apache2 && service apache2 start
-CMD ["SERVICE","START"]
+
+RUN apt-get update && apt-get install -y apache2 && service apache2 start
+
+CMD ["ping","google.com"]
